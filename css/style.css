@@ -1,0 +1,21 @@
+.test {
+  color: red;
+}
+
+body {
+  background: #ffecec;
+}
+body .main {
+  color: #000;
+}
+body .main .text {
+  color: #fff;
+  background: blue;
+  -webkit-box-shadow: 0 2px 0 black;
+          box-shadow: 0 2px 0 black;
+}
+body #hello-example {
+  width: 300px;
+  height: 300px;
+  background: url("../img/view.png");
+}
