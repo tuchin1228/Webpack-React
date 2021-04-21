@@ -12,6 +12,9 @@ module.exports = (env, argv) => ({
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: './js/[name].js',
+    publicPath: process.env.NODE_ENV === 'production'
+      ? '/Webpack-React/'
+      : '/',
   },
   optimization: {
     splitChunks: {
