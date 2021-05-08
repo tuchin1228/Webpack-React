@@ -120,6 +120,7 @@ module.exports = (env, argv) => ({
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
+              esModule: false,
             },
 
             // loader: 'url-loader',

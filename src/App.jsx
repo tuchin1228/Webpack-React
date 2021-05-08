@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import picture from './img/view.png'
+import picture from './assets/image/view.png'
 import axios from 'axios'
 import styled from 'styled-components';
 
