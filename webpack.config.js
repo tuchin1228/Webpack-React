@@ -63,6 +63,26 @@ module.exports = (env, argv) => ({
           }
         }
       },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              injectType: 'linkTag'
+            }
+          },
+          {
+            loader: "file-loader",
+            options: {
+              name: './css/[name].css'
+            }
+          },
+          {
+            loader: "postcss-loader"
+          }
+        ]
+      },
       // {
       //   test: /\.(scss|sass)$/,
       //   exclude: /node_modules/,

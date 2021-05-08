@@ -36,6 +36,7 @@ export default class App extends Component {
         <img src={picture} alt="" />
         <Title>App Content<span>span</span></Title><br />
         {this.state.count}<br />
+        <h4 className="text-xl text-blue-400">tailwind</h4>
       </>
     )
 
