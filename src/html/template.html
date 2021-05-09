@@ -15,11 +15,20 @@
 
 
   <div id="app">
-    <!-- <img src="./img/view.png">/ -->
   </div>
 
-  <!-- <script src='main.js'></script> -->
-
+  <script>
+    let body = document.body
+    let app = document.getElementById('app')
+    let isIE = (window.navigator.userAgent.indexOf('MSIE') > 0) || (window.navigator.userAgent.indexOf('Trident/') > 0);
+    if (isIE == true) {
+      alert('本站不支援IE瀏覽器')
+      body.removeChild(app)
+      var h1Content = document.createElement("h1");
+      h1Content.innerHTML = '本站不支援IE'
+      body.appendChild(h1Content);
+    }
+  </script>
 </body>
 
 </html>
